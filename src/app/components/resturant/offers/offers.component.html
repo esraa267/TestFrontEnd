@@ -1,25 +1,26 @@
-<div class="row">
+
+
+<div  class="row">
   <div *ngFor="let item of data" class="col-5">
     <div class="food-card bg-white rounded-lg overflow-hidden mb-4 shadow">
       <div class="food-card_img position-relative">
         <img [src]="item.images[0].path" />
+        <div class="offer__name">
+          <span>{{ item.name }}</span>
+        </div>
       </div>
       <div class="food-card_content">
         <div class="food-card_title-section overflow-hidden">
           <h4 class="food-card_title">
-            <a class="text-dark"></a></h4>
+            <a class="text-dark"></a>
+          </h4>
           <div class="d-flex justify-content-between">
-            <img src="">
-            <div Color class="rating-box">
-              <rating
-              [max]="5"
-              [readonly]="true"
-            >
-            </rating>
+            <div class="price">{{ item.price | currency: "EGP" }}</div>
+            <div>
+              <span *ngFor="let product of item.products">{{ product.product }},</span>
             </div>
           </div>
         </div>
-        <div class="title"></div>
       </div>
     </div>
   </div>

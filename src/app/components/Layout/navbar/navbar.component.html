@@ -1,17 +1,9 @@
-<!-- <nav class="btns__container">
-  <button
-    [routerLink]="['branchies/' + branch.id]"
-    *ngFor="let branch of branches"
-    class="button"
-  >
-    {{ branch.name }}
-  </button>
-</nav> -->
+
 <nav>
   <ul id="action">
     <li *ngFor="let branch of branches">
-      <a [routerLink]="['branchies/' + branch.id]">
-         {{ branch.name }}</a>
+     
+      <a [routerLink]="['branchies/' + branch.id]"> {{ branch.name }}</a>
     </li>
   </ul>
 

@@ -1,6 +1,7 @@
 .food-card {
   transition: 1s;
   box-shadow: 0 2px 10px rgb(0 0 0 / 6%) !important;
+  cursor: pointer;
 }
 .food-card .food-card_img img {
   width: 100%;
@@ -27,4 +28,16 @@ food-card .food-card_content .food-card_title-section {
 .rating-box {
     display: flex;
     align-items: center;
+}
+.offer__name{
+  position: absolute;
+  bottom: 0;
+  background-color: #ff7522;
+  color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+  opacity: 0.7;
+}
+.price{
+  font-weight: 800;
 }
