@@ -1,0 +1,118 @@
+/* .btns__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.button {
+  padding: 1rem;
+  margin: 0 0.5rem;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  transition: 0.5s;
+  font-size: 20px;
+  border-radius: 10px;
+  font-family: "Lato", sans-serif;
+  border: 0.5px solid #f3e1db;
+  color: #ff5722;
+}
+.button:hover {
+  border: none;
+  color: white;
+  font-size: 20px;
+  transform: scale(1.1);
+  background-color: #ff5722;
+  transition: all 0.3s ease-in-out;
+} */
+
+nav {
+  padding: 2.8rem 8% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0.8rem 1.5rem;
+}
+nav ul li a {
+  color: #ff7522;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.5s;
+}
+
+#menu {
+  display: none;
+  position: relative;
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  user-select: none;
+}
+#menu span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  background-color: #ff7522;
+  border-radius: 6px;
+  transform-origin: 0 0;
+  transition: 0.5s;
+  margin-bottom: 5px;
+}
+#menu.is-active span:nth-child(1) {
+  transform: translate(0px, -2px) rotate(45deg);
+}
+#menu.is-active span:nth-child(2) {
+  opacity: 0;
+}
+#menu.is-active span:nth-child(3) {
+  transform: translate(-3px, 3px) rotate(-45deg);
+}
+#menu.is-active span {
+  background-color: #ff7522;
+}
+@media screen and (max-width: 575px) {
+  nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 52px;
+    padding-top: 0;
+    background-color: #ffff;
+    border-bottom: 1px solid #ff7522;
+    z-index: 100;
+    justify-content: left;
+  }
+  nav > a {
+    display: none;
+  }
+  nav ul {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+
+    height: 100vh;
+    background-color: #ffff;
+  }
+  nav ul li {
+    display: block;
+    text-align: left;
+    margin: 50px;
+    font-size: 1.5rem;
+  }
+  nav ul.is-active {
+    display: block;
+  }
+
+  #menu {
+    display: block;
+  }
+}

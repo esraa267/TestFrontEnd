@@ -1,0 +1,14 @@
+<div class="row flex-wrap justify-content-between mt-3">
+  <div class="item__card col-lg-5" *ngFor="let item of data">
+    <div class="mb-3">
+      <img [src]="item.image" />
+      <span class="ms-2 fs-5">{{ item.name }}</span>
+    </div>
+    <div Color>
+      <rating [(ngModel)]="item.rate_count" [max]="5" [readonly]="true">
+      </rating>
+    </div>
+
+    <div class="mb-3" [innerHtml]="item.description"></div>
+  </div>
+</div>

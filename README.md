@@ -1,34 +1,27 @@
-# Angular -Restaurants
+# TestFrontEnd
 
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
 
+## Development server
 
-## Description
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-A website to display restaurants, There are types of restaurants or specialties such as home food or pizza and so on
-The site displays the types of restaurants, and each type includes its restaurants
+## Code scaffolding
 
-## Task
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
+## Build
 
-- Implement elegant web design like attached screen 
-- In the header show all types of restaurants using api (branch types ) in attaeched postamn collection
-- when click on one of these types show its restaurant like attached screen using api (get restaurants) in attaeched postamn collection 
-- Implement a detail view for the restaurants in the list like attached screen using the api (get restaurant details) in attaeched postamn collection
-the attached screen for mobile to take hint
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Evaluation Criteria
-- Design implemented according to attached files using Angular Components
-- Design must be responsive and meet all media sizes
-- Connect to APIs mentioned, JSON parsed
-- Bouns: the quality of design
+## Running unit tests
 
-## Useful Links
-[Angular Docs](https://angular.io/docs)
-[Angular Material Components](https://material.angular.io/components/categories)
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## CodeSubmit
-Please organize, design, test and document your code as if it were going into production - then push your changes to the master branch. After you have pushed your code, you may send us email 
+## Running end-to-end tests
 
-All the best and happy coding,
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-The techcubics Team
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

@@ -1,0 +1,24 @@
+<app-spinner *ngIf="loading"></app-spinner>
+
+<div *ngIf="!loading" class="row flex-wrap justify-content-between mt-3">
+  <div
+    [routerLink]="[resturant.id]"
+    class="resturant__card col-lg-5 col-11"
+    *ngFor="let resturant of resturants"
+  >
+    <div class="mb-3 head">
+      <img [src]="resturant.logo" />
+      <span>{{ resturant.name }}</span>
+    </div>
+    <div Color>
+      <rating [(ngModel)]="resturant.rate_count" [max]="5" [readonly]="true">
+      </rating>
+    </div>
+
+    <div class="description" [innerHtml]="resturant.description"></div>
+    <div class="region">
+      <span>{{ resturant.governorate.name }}</span
+      >,<span>{{ resturant.region.name }}</span>
+    </div>
+  </div>
+</div>

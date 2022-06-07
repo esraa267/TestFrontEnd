@@ -1,0 +1,6 @@
+.spinner {
+  text-align: -webkit-center;
+}
+mat-spinner {
+  zoom: 0.5
+}

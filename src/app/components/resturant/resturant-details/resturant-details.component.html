@@ -1,0 +1,31 @@
+<app-spinner [hidden]="restaurant"></app-spinner>
+<div [hidden]="!restaurant" class="resturant__details">
+  <div class="mb-3">
+    <img [src]="restaurant?.restaurant?.logo" />
+    <p class="ms-2 fs-5">{{ restaurant?.restaurant.name }}</p>
+  </div>
+  <div class="mb-3" [innerHtml]="restaurant?.restaurant.description"></div>
+  <div Color>
+    <rating
+      [(ngModel)]="restaurant?.restaurant.rate_count"
+      [max]="5"
+      [readonly]="true"
+    >
+    </rating>
+  </div>
+  <div class="mt-5 row">
+    <div class="col-12" *ngIf="restaurant">
+      <mat-tab-group dynamicHeight mat-align-tabs="center" color="warn">
+        <mat-tab class="gg" label="offers"
+          ><app-offers [data]="restaurant?.offers"></app-offers
+        ></mat-tab>
+        <mat-tab label="menu"
+          ><app-menu [data]="restaurant?.menu"></app-menu
+        ></mat-tab>
+        <mat-tab label="extras"
+          ><app-extra [data]="restaurant?.extras"></app-extra
+        ></mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+</div>
