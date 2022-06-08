@@ -1,12 +1,5 @@
-import {
-  Component,
-  Input,
-  OnChanges,
-  OnInit,
-  SimpleChanges,
-} from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { DataServiceService } from 'src/app/service/DataService/data-service.service';
 
 @Component({
   selector: 'app-menu',
@@ -14,11 +7,8 @@ import { DataServiceService } from 'src/app/service/DataService/data-service.ser
   styleUrls: ['./menu.component.css'],
 })
 export class MenuComponent implements OnInit {
-  @Input() data : any;
+  @Input() data: any;
   constructor(private roure: ActivatedRoute) {}
 
-  ngOnInit(): void {
-    console.log(this.data,'menu');
-    
-  }
+  ngOnInit(): void {}
 }

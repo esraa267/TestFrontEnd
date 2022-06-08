@@ -6,11 +6,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./offers.component.css'],
 })
 export class OffersComponent implements OnInit {
-  @Input() data :any;
+  @Input() data: any;
   constructor() {}
 
-  ngOnInit(): void {
-    console.log('ffers',this.data);
-    
-  }
+  ngOnInit(): void {}
 }

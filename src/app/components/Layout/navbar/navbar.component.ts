@@ -13,9 +13,7 @@ export class NavbarComponent implements OnInit {
   branches: Branch[] = [];
   ngOnInit(): void {
     this.navbar();
-    this.data
-      .getBranches()
-      .subscribe((branchies) => (this.branches = branchies.data));
+    this.getBranches();
   }
   navbar() {
     const menu = document.getElementById('menu');
@@ -27,5 +25,10 @@ export class NavbarComponent implements OnInit {
     menu?.addEventListener('click', () => {
       HandelMenu();
     });
+  }
+  getBranches() {
+    this.data
+      .getBranches()
+      .subscribe((branchies) => (this.branches = branchies.data));
   }
 }

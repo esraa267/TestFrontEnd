@@ -23,7 +23,6 @@ export class ResturantComponent implements OnInit {
       this.loading = true;
       this.data.getResturants(param['Bid']).subscribe((res) => {
         this.resturants = res.data;
-
         this.loading = false;
       });
     });

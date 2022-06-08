@@ -10,7 +10,7 @@ export class ExtraComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log('offer',this.data);
+   
     
   }
 
