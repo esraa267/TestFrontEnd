@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Branch } from 'src/app/Models/Branch';
-import { DataServiceService } from 'src/app/service/data-service.service';
+import { DataServiceService } from 'src/app/service/DataService/data-service.service';
 
 @Component({
   selector: 'app-navbar',

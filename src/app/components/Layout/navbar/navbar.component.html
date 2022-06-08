@@ -1,8 +1,6 @@
-
-<nav>
+<nav [hidden]="!branches">
   <ul id="action">
-    <li *ngFor="let branch of branches">
-     
+    <li routerLinkActive="active" *ngFor="let branch of branches">
       <a [routerLink]="['branchies/' + branch.id]"> {{ branch.name }}</a>
     </li>
   </ul>
@@ -13,3 +11,4 @@
     <span></span>
   </button>
 </nav>
+<app-spinner [hidden]="branches"></app-spinner>

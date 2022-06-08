@@ -1,36 +1,12 @@
-/* .btns__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-}
-.button {
-  padding: 1rem;
-  margin: 0 0.5rem;
-  outline: none;
-  cursor: pointer;
-  background: none;
-  transition: 0.5s;
-  font-size: 20px;
-  border-radius: 10px;
-  font-family: "Lato", sans-serif;
-  border: 0.5px solid #f3e1db;
-  color: #ff5722;
-}
-.button:hover {
-  border: none;
-  color: white;
-  font-size: 20px;
-  transform: scale(1.1);
-  background-color: #ff5722;
-  transition: all 0.3s ease-in-out;
-} */
+
 
 nav {
   padding: 2.8rem 8% 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
 }
 nav ul li {
   list-style-type: none;

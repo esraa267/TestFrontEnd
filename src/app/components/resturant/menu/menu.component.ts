@@ -6,7 +6,7 @@ import {
   SimpleChanges,
 } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { DataServiceService } from 'src/app/service/data-service.service';
+import { DataServiceService } from 'src/app/service/DataService/data-service.service';
 
 @Component({
   selector: 'app-menu',
